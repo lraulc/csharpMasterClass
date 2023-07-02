@@ -4,30 +4,27 @@ public class Program
 {
     public static void Main()
     {
-        Console.Write("Enter a string and press enter\n");
-        string readInput = Console.ReadLine();
-        Console.WriteLine("You have entered {0}", readInput);
+        int age = 30;
+        string name = "Raul";
+        string job = "developer";
+
+        // 1. String concatenation
+        Console.WriteLine("string concat");
+        Console.WriteLine("Hello, my name is " + name + " my age is " + age);
+
+        // 2. String formatting
+        Console.WriteLine("String Formatting");
+        // Depending on the index, it will be required as an additional value
+        Console.WriteLine("Hello my name is {0}, I am {1} years old, I am a {2}", name, age, job);
 
 
-        Console.Write("Enter a string and press enter: ");
-        int asciiValue = Console.Read();
-        Console.WriteLine("ASCII Value is {0}", asciiValue);
+        // 3. String interp
+        Console.WriteLine("String interpolation");
+        Console.WriteLine($"Hello, my name is {name}, I am {age} old, and I am a {job}");
 
-        TypeConversion();
-
-    }
-
-    /// <summary>
-    /// Type conversion test
-    /// </summary>
-    public static void TypeConversion()
-    {
-        float myFloat = 13.37f;
-        string myFloatString = myFloat.ToString();
-        double myDouble = 100.0234523;
-        int myInt = (int)myDouble;
-        string myString = myDouble.ToString();
-
-        Console.WriteLine($"Float string: {myFloatString}\n" + $"My double as int: {myInt}\n" + $"My string: {myString}\n");
+        // 4. Verbatim strings
+        Console.WriteLine("Verbatim Strings");
+        // It is used to ignore any "escape" route, perfect to be used on routes
+        Console.WriteLine(@"E:\Cursos\csharpMasterClass\FirstSection\FirstProgram");
     }
 }
