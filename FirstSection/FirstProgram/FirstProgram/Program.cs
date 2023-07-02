@@ -26,5 +26,13 @@ public class Program
         Console.WriteLine("Verbatim Strings");
         // It is used to ignore any "escape" route, perfect to be used on routes
         Console.WriteLine(@"E:\Cursos\csharpMasterClass\FirstSection\FirstProgram");
+
+        // Backslash before quotes to ignore any special character
+        // Backslash used as escape character
+        // Backslash \n used to add a new line
+        string s1 = "This is a\"string\"with\na backslash \\ and a colon :";
+        Console.WriteLine(s1);
+
+
     }
 }
