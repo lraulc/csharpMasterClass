@@ -34,5 +34,28 @@ public class Program
         Console.WriteLine(s1);
 
 
+        Challenge1();
+
+
+    }
+
+    public static void Challenge1()
+    {
+        string myString;
+        Console.WriteLine("Please enter you name and press enter: ");
+        myString = Console.ReadLine();
+        string myUpperString = myString.ToUpper();
+        string myLowerString = myUpperString.ToLower();
+
+
+        Console.WriteLine(myUpperString);
+        Console.WriteLine(myLowerString);
+        string myStringTrim = myString.Trim();
+        Console.WriteLine(myStringTrim);
+        string subStringmyString = myString.Trim().Substring(4);
+        Console.WriteLine(subStringmyString);
+
+
+
     }
 }
